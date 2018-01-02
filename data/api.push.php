@@ -1,5 +1,5 @@
 <?php
-namespace Slothsoft\CMS;
+namespace Slothsoft\Farah;
 /*
 if (! isset($_REQUEST['type'])) {
     $_REQUEST['type'] = 'message';

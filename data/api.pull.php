@@ -1,5 +1,5 @@
 <?php
-namespace Slothsoft\CMS;
+namespace Slothsoft\Farah;
 
 /*
 const MAX_EXECUTION_TIME = 6000;
