@@ -1,42 +1,62 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<module>
-	<fragment name="faq">
-		<struc name="/slothsoft/default" />
-		<fragment name="content">
-			<template name="faq" />
-		</fragment>
-		<call name="/slothsoft/slothsoft-chat" as="chat" />
-	</fragment>
+<?xml version="1.0"?>
+<module xmlns="http://schema.slothsoft.net/farah/module" xmlns:sfm="http://schema.slothsoft.net/farah/module">
+  <!--
+Farah Module Manifest
 
-	<fragment name="game">
-		<template name="adventure" />
-		<res name="adventure" load="xml" />
+Module: whatthehell
+Vendor: slothsoft
+Farah ID: farah://slothsoft@whatthehell
+Composer ID: slothsoft/whatthehell
 
-		<style name="default" />
-		<style name="objects" />
+Homepage: http://farah.slothsoft.net/modules/whatthehell
+Packagist: https://packagist.org/packages/slothsoft/whatthehell
+GitHub: https://github.com/Faulo/slothsoft-whatthehell
 
-		<struc name="/core/DOM" />
-
-		<script name="2D" />
-		<script name="2Dfix" />
-		<script name="Trait" />
-		<script name="Trait.View" />
-		<script name="Trait.ViewGameElement" />
-		<script name="Adventure" />
-		<script name="Adventure.Controller" />
-		<script name="Adventure.Controller.Pull" />
-		<script name="Adventure.Model" />
-		<script name="Adventure.Model.Pull" />
-		<script name="Adventure.View" />
-		<script name="Adventure.View.God" />
-		<script name="Adventure.View.Human" />
-		<script name="Adventure.View.Map" />
-		<script name="Adventure.View.Map.Item" />
-		<script name="Adventure.View.Menu" />
-		<script name="Adventure.View.Solo" />
-	</fragment>
-	<resource name="adventure" path="adventure.xml" type="application/xml" />
-	<resource name="background-fort" path="background-fort.png"
-		type="image/png" />
-	<resource name="font" path="prstartk.ttf" type="application/x-ttf" />
+Llo
+-->
+  <default-configuration/>
+  <assets>
+    <resource-directory name="data" path="data" type="application/x-php"/>
+    <resource-directory name="css" path="stylesheet" type="text/css"/>
+    <resource-directory name="js" path="script" type="application/javascript"/>
+    <resource-directory name="xsl" path="template" type="application/xslt+xml"/>
+    <resource-directory name="dictionary" path="dictionary" type="application/xml"/>
+    <resource-directory name="pages" path="pages" type="application/xml"/>
+    <fragment name="faq">
+      <include-fragment ref="//slothsoft@slothsoft/default"/>
+      <fragment name="content">
+        <use-template ref="xsl/faq"/>
+      </fragment>
+      <use-document as="chat" ref="//slothsoft@slothsoft/slothsoft-chat"/>
+    </fragment>
+    <fragment name="game">
+      <use-template ref="xsl/adventure"/>
+      <use-document ref="static/adventure"/>
+      <use-stylesheet ref="css/default"/>
+      <use-stylesheet ref="css/objects"/>
+      <include-fragment ref="//slothsoft@core/DOM"/>
+      <use-script ref="js/2D"/>
+      <use-script ref="js/2Dfix"/>
+      <use-script ref="js/Trait"/>
+      <use-script ref="js/Trait.View"/>
+      <use-script ref="js/Trait.ViewGameElement"/>
+      <use-script ref="js/Adventure"/>
+      <use-script ref="js/Adventure.Controller"/>
+      <use-script ref="js/Adventure.Controller.Pull"/>
+      <use-script ref="js/Adventure.Model"/>
+      <use-script ref="js/Adventure.Model.Pull"/>
+      <use-script ref="js/Adventure.View"/>
+      <use-script ref="js/Adventure.View.God"/>
+      <use-script ref="js/Adventure.View.Human"/>
+      <use-script ref="js/Adventure.View.Map"/>
+      <use-script ref="js/Adventure.View.Map.Item"/>
+      <use-script ref="js/Adventure.View.Menu"/>
+      <use-script ref="js/Adventure.View.Solo"/>
+    </fragment>
+    <directory name="static">
+      <resource name="adventure" path="adventure.xml" type="application/xml"/>
+      <resource name="background-fort" path="background-fort.png" type="image/png"/>
+      <resource name="font" path="prstartk.ttf" type="application/x-ttf"/>
+    </directory>
+  </assets>
 </module>
