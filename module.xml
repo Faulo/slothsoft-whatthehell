@@ -22,6 +22,11 @@ Llo
     <resource-directory name="xsl" path="template" type="application/xslt+xml"/>
     <resource-directory name="dictionary" path="dictionary" type="application/xml"/>
     <resource-directory name="pages" path="pages" type="application/xml"/>
+    <directory name="static">
+      <resource name="adventure" path="adventure.xml" type="application/xml"/>
+      <resource name="background-fort" path="background-fort.png" type="image/png"/>
+      <resource name="font" path="prstartk.ttf" type="application/x-ttf"/>
+    </directory>
     <fragment name="faq">
       <include-fragment ref="//slothsoft@slothsoft/default"/>
       <fragment name="content">
@@ -53,10 +58,5 @@ Llo
       <use-script ref="js/Adventure.View.Menu"/>
       <use-script ref="js/Adventure.View.Solo"/>
     </fragment>
-    <directory name="static">
-      <resource name="adventure" path="adventure.xml" type="application/xml"/>
-      <resource name="background-fort" path="background-fort.png" type="image/png"/>
-      <resource name="font" path="prstartk.ttf" type="application/x-ttf"/>
-    </directory>
   </assets>
 </module>
