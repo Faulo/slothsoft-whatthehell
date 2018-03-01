@@ -1,26 +1,23 @@
 {
-    "name": "slothsoft/whatthehell",
-    "description": "A Farah module that contains the game What the Hell, God?",
-    "keywords": [],
-    "license": "WTFPL",
-    "authors": [
-        {
-            "name": "Daniel Schulz",
-            "email": "info.slothsoft@gmail.com"
-        }
-    ],
-    "type": "library",
-    "require": {
+	"name" : "slothsoft/whatthehell",
+	"description" : "A Farah module that contains the game What the Hell, God?",
+	"license" : "WTFPL",
+	"authors" : [{
+			"name" : "Daniel Schulz",
+			"email" : "info.slothsoft@gmail.com"
+		}
+	],
+	"type" : "library",
+	"require" : {
 		"slothsoft/core" : "*",
-		
-		"php": ">=7.0"
-    },
-	"require-dev": {
-		"phpunit/phpunit": ">=6.0"
-    },
-	"autoload": {
-        "psr-4": {
-            "Slothsoft\\WhatTheHell\\": "php/"
-        }
-    }
+		"php" : ">=7.0"
+	},
+	"require-dev" : {
+		"phpunit/phpunit" : ">=6.0"
+	},
+	"autoload" : {
+		"psr-4" : {
+			"Slothsoft\\WhatTheHell\\" : "src/Slothsoft/WhatTheHell/"
+		}
+	}
 }
