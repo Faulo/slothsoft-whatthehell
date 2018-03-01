@@ -28,7 +28,7 @@ Llo
       <resource name="font" path="prstartk.ttf" type="application/x-ttf"/>
     </directory>
     <fragment name="faq">
-      <include-fragment ref="//slothsoft@slothsoft/default"/>
+      <import ref="//slothsoft@slothsoft/default"/>
       <fragment name="content">
         <use-template ref="xsl/faq"/>
       </fragment>
@@ -39,7 +39,7 @@ Llo
       <use-document ref="static/adventure"/>
       <use-stylesheet ref="css/default"/>
       <use-stylesheet ref="css/objects"/>
-      <include-fragment ref="//slothsoft@core/DOM"/>
+      <import ref="//slothsoft@core/DOM"/>
       <use-script ref="js/2D"/>
       <use-script ref="js/2Dfix"/>
       <use-script ref="js/Trait"/>
