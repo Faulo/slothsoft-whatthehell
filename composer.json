@@ -19,7 +19,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Slothsoft\\WhatTheHell\\": "src\/Slothsoft\/WhatTheHell\/"
+            "Slothsoft\\WhatTheHell\\": "src\/"
         }
     }
 }
