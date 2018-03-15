@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<assets xmlns="http://schema.slothsoft.net/farah/module">
+    <resource-directory name="data" path="data" type="application/x-php"/>
+    <resource-directory name="css" path="stylesheet" type="text/css"/>
+    <resource-directory name="js" path="script" type="application/javascript"/>
+    <resource-directory name="xsl" path="template" type="application/xslt+xml"/>
+    <resource-directory name="dictionary" path="dictionary" type="application/xml"/>
+    <resource-directory name="pages" path="pages" type="application/xml"/>
+    <directory name="static">
+      <resource name="adventure" path="adventure.xml" type="application/xml"/>
+      <resource name="background-fort" path="background-fort.png" type="image/png"/>
+      <resource name="font" path="prstartk.ttf" type="application/x-ttf"/>
+    </directory>
+    <fragment name="faq">
+      <import ref="//slothsoft@slothsoft/default"/>
+      <fragment name="content">
+        <use-template ref="xsl/faq"/>
+      </fragment>
+      <use-document as="chat" ref="//slothsoft@slothsoft/slothsoft-chat"/>
+    </fragment>
+    <fragment name="game">
+      <use-template ref="xsl/adventure"/>
+      <use-document ref="static/adventure"/>
+      <link-stylesheet ref="css/default"/>
+      <link-stylesheet ref="css/objects"/>
+      <import ref="//slothsoft@core/DOM"/>
+      <link-script ref="js/2D"/>
+      <link-script ref="js/2Dfix"/>
+      <link-script ref="js/Trait"/>
+      <link-script ref="js/Trait.View"/>
+      <link-script ref="js/Trait.ViewGameElement"/>
+      <link-script ref="js/Adventure"/>
+      <link-script ref="js/Adventure.Controller"/>
+      <link-script ref="js/Adventure.Controller.Pull"/>
+      <link-script ref="js/Adventure.Model"/>
+      <link-script ref="js/Adventure.Model.Pull"/>
+      <link-script ref="js/Adventure.View"/>
+      <link-script ref="js/Adventure.View.God"/>
+      <link-script ref="js/Adventure.View.Human"/>
+      <link-script ref="js/Adventure.View.Map"/>
+      <link-script ref="js/Adventure.View.Map.Item"/>
+      <link-script ref="js/Adventure.View.Menu"/>
+      <link-script ref="js/Adventure.View.Solo"/>
+    </fragment>
+  </assets>
