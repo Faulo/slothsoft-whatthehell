@@ -30,10 +30,13 @@
 	},
 	"autoload" : {
 		"files" : [
-			"C:\\Webserver\\workspace\\slothsoft-whatthehell\\src\\registerModule.php"
+			"src/registerModule.php"
 		],
 		"psr-0" : {
 			"Slothsoft\\WhatTheHell\\" : "src/"
 		}
-	}
+	},
+	"keywords" : [
+		"farah-app"
+	]
 }
