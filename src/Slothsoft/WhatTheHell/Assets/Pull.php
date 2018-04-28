@@ -2,9 +2,9 @@
 declare(strict_types = 1);
 namespace Slothsoft\WhatTheHell\Assets;
 
-use Slothsoft\Farah\Module\Node\Asset\AssetImplementation;
+use Slothsoft\Farah\Module\Node\Asset\AssetBase;
 
-class Pull extends AssetImplementation
+class Pull extends AssetBase
 {
     /*
      * const MAX_EXECUTION_TIME = 6000;

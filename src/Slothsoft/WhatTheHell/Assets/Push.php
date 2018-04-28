@@ -2,9 +2,9 @@
 declare(strict_types = 1);
 namespace Slothsoft\WhatTheHell\Assets;
 
-use Slothsoft\Farah\Module\Node\Asset\AssetImplementation;
+use Slothsoft\Farah\Module\Node\Asset\AssetBase;
 
-class Push extends AssetImplementation
+class Push extends AssetBase
 {
     /*
      * if (! isset($_REQUEST['type'])) {
