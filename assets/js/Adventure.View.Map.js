@@ -3,7 +3,8 @@ Adventure.View.Map = Trait.build({
 		"ViewElement"
 	],
 	construct : function(ownerView, viewId) {
-		this.ViewElement(ownerView, viewId, DOM.loadDocument("/getTemplate.php/whatthehell/view.map"));
+		let templateDoc = DOM.loadDocument("/getAsset.php/whatthehell/xsl/view.map");
+		this.ViewElement(ownerView, viewId, templateDoc);
 		this.intersection = new Intersection();
 		this.intersection.init();
 		window.viewMapHack = this;

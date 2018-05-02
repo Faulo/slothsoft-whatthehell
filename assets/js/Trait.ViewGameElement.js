@@ -3,7 +3,8 @@ Trait.ViewGameElement = {
 		"ViewElement"
 	],
 	construct : function(ownerView, viewId, templateURI, pullURI) {
-		this.ViewElement(ownerView, viewId, DOM.loadDocument(templateURI));
+		let templateDoc = DOM.loadDocument(templateURI);
+		this.ViewElement(ownerView, viewId, templateDoc);
 		if (pullURI) {
 			this.ownerView.controller.addPullListener(
 				pullURI,

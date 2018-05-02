@@ -1,6 +1,6 @@
 @font-face {
 	font-family: myWriting;
-	src:url(/getResource.php/whatthehell/font);
+	src:url(/getAsset.php/whatthehell/static/font);
 }
 svg {
 	/*viewport-fill: black;*/

@@ -6,7 +6,7 @@ Adventure.View.Solo = Trait.build({
 		this.ViewGameElement(
 			ownerView,
 			viewId,
-			"/getTemplate.php/whatthehell/view.human",
+			"/getAsset.php/whatthehell/xsl/view.human",
 			undefined
 		);
 		this.ownerView.controller.loadView("map", this);

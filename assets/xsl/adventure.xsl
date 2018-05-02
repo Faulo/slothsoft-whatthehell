@@ -8,7 +8,7 @@
 	
 	
 	
-	<xsl:template match="*[@data-cms-name='adventure']/data">
+	<xsl:template match="*[@name='adventure']/data">
 		<xsl:variable name="config" select="config"/>
 		<xsl:variable name="mode" select="@mode"/>
 		<svg version="1.2" baseProfile="tiny"			

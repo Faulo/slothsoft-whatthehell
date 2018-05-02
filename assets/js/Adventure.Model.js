@@ -136,7 +136,7 @@ Adventure.Model = Trait.build({
 					viewData = {
 						layers : [
 							{
-								image : "/getResource.php/whatthehell/background-fort",
+								image : "/getAsset.php/whatthehell/static/background-fort",
 								clickies : [
 									{
 										name : "Baum",

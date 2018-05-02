@@ -21,9 +21,9 @@ const REL_PATH = "../../";
 
 
 const CLASSES = [
-	"/getScript.php/whatthehell/Trait",
-	"/getScript.php/whatthehell/Adventure.Model",
-	"/getScript.php/whatthehell/Adventure.Model.Pull",
+	"/getAsset.php/whatthehell/js/Trait",
+	"/getAsset.php/whatthehell/js/Adventure.Model",
+	"/getAsset.php/whatthehell/js/Adventure.Model.Pull",
 ];
 
 self.sendMessage = function(action, payload) {
