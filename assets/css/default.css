@@ -1,22 +1,28 @@
 @font-face {
 	font-family: myWriting;
-	src:url(/getAsset.php/whatthehell/static/font);
+	src: url(/getAsset.php/whatthehell/static/font);
 }
+
 svg {
 	/*viewport-fill: black;*/
 	background-color: #111;
 }
+
 text, textArea, rect, circle {
 	pointer-events: none;
 	cursor: default;
 }
+
 *[data-item] {
 	/*pointer-events: auto;*/
+	
 }
 
-text[data-tooltip], rect[data-tooltip], circle[data-tooltip], path[data-tooltip] {
+text[data-tooltip], rect[data-tooltip], circle[data-tooltip], path[data-tooltip]
+	{
 	pointer-events: fill;
 }
+
 text[data-highlight] {
 	pointer-events: fill;
 }
@@ -44,42 +50,51 @@ text[data-highlight]:active {
 	filter: url(filter.svg#clickOutline);
 }
 */
-
 #body {
 	
 }
+
 #map {
 	
 }
+
 #frame {
 	stroke: silver;
 	stroke-width: 16px;
 	fill: none;
 	pointer-events: none;
 }
+
 text, textArea {
 	font-family: myWriting;
 	fill: #11DD11;
 	/*text-decoration: underline;*/
 }
+
 .white {
 	fill: #fafafa;
 }
+
 .green {
 	fill: #1d1;
 }
+
 .cyan {
-	fill: #1cc;/*1dd*/
+	fill: #1cc; /*1dd*/
 }
+
 .blue {
 	fill: #11d;
 }
+
 .yellow {
 	fill: #dd1;
 }
+
 .red {
 	fill: #d11;
 }
+
 .pink {
 	fill: #d1d;
 }

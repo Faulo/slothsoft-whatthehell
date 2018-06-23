@@ -1,50 +1,50 @@
 <?xml version="1.0"?>
 <assets xmlns="http://schema.slothsoft.net/farah/module">
-    <resource-directory name="css" type="text/css"/>
-    <resource-directory name="js" type="application/javascript"/>
-    <resource-directory name="xsl" type="application/xslt+xml"/>
-    
-    <resource-directory name="dictionary" type="application/xml"/>
-    
-    <directory name="static">
-      <resource name="adventure" path="adventure.xml" type="application/xml"/>
-      <resource name="background-fort" path="background-fort.png" type="image/png"/>
-      <resource name="font" path="prstartk.ttf" type="application/x-ttf"/>
-    </directory>
-    
-    <fragment name="html">
-      <fragment name="faq">
-        <use-template ref="/xsl/faq" name="faq"/>
-      </fragment>
-    </fragment>
-    
-    <fragment name="game">
-      <use-template ref="/xsl/adventure" name="adventure"/>
-      <use-document ref="/static/adventure" name="adventure"/>
-      <link-stylesheet ref="/css/default" name="default"/>
-      <link-stylesheet ref="/css/objects" name="objects"/>
-      <import ref="//slothsoft@core/api/DOM" name="DOM"/>
-      <link-script ref="/js/2D" name="2D"/>
-      <link-script ref="/js/2Dfix" name="2Dfix"/>
-      <link-script ref="/js/Trait" name="Trait"/>
-      <link-script ref="/js/Trait.View" name="Trait.View"/>
-      <link-script ref="/js/Trait.ViewGameElement" name="Trait.ViewGameElement"/>
-      <link-script ref="/js/Adventure" name="Adventure"/>
-      <link-script ref="/js/Adventure.Controller" name="Adventure.Controller"/>
-      <link-script ref="/js/Adventure.Controller.Pull" name="Adventure.Controller.Pull"/>
-      <link-script ref="/js/Adventure.Model" name="Adventure.Model"/>
-      <link-script ref="/js/Adventure.Model.Pull" name="Adventure.Model.Pull"/>
-      <link-script ref="/js/Adventure.View" name="Adventure.View"/>
-      <link-script ref="/js/Adventure.View.God" name="Adventure.View.God"/>
-      <link-script ref="/js/Adventure.View.Human" name="Adventure.View.Human"/>
-      <link-script ref="/js/Adventure.View.Map" name="Adventure.View.Map"/>
-      <link-script ref="/js/Adventure.View.Map.Item" name="Adventure.View.Map.Item"/>
-      <link-script ref="/js/Adventure.View.Menu" name="Adventure.View.Menu"/>
-      <link-script ref="/js/Adventure.View.Solo" name="Adventure.View.Solo"/>
-    </fragment>
-    
-    <fragment name="api">
-    	<custom-asset name="pull" executable-builder="Slothsoft\WhatTheHell\Assets\PullBuilder"/>
-    	<custom-asset name="push" executable-builder="Slothsoft\WhatTheHell\Assets\PushBuilder"/>
-    </fragment>
-  </assets>
+	<resource-directory name="css" type="text/css" />
+	<resource-directory name="js" type="application/javascript" />
+	<resource-directory name="xsl" type="application/xslt+xml" />
+
+	<resource-directory name="dictionary" type="application/xml" />
+
+	<directory name="static">
+		<resource name="adventure" path="adventure.xml" type="application/xml" />
+		<resource name="background-fort" path="background-fort.png" type="image/png" />
+		<resource name="font" path="prstartk.ttf" type="application/x-ttf" />
+	</directory>
+
+	<fragment name="html">
+		<fragment name="faq">
+			<use-template ref="/xsl/faq" name="faq" />
+		</fragment>
+	</fragment>
+
+	<fragment name="game">
+		<use-template ref="/xsl/adventure" name="adventure" />
+		<use-document ref="/static/adventure" name="adventure" />
+		<link-stylesheet ref="/css/default" name="default" />
+		<link-stylesheet ref="/css/objects" name="objects" />
+		<import ref="//slothsoft@core/api/DOM" name="DOM" />
+		<link-script ref="/js/2D" name="2D" />
+		<link-script ref="/js/2Dfix" name="2Dfix" />
+		<link-script ref="/js/Trait" name="Trait" />
+		<link-script ref="/js/Trait.View" name="Trait.View" />
+		<link-script ref="/js/Trait.ViewGameElement" name="Trait.ViewGameElement" />
+		<link-script ref="/js/Adventure" name="Adventure" />
+		<link-script ref="/js/Adventure.Controller" name="Adventure.Controller" />
+		<link-script ref="/js/Adventure.Controller.Pull" name="Adventure.Controller.Pull" />
+		<link-script ref="/js/Adventure.Model" name="Adventure.Model" />
+		<link-script ref="/js/Adventure.Model.Pull" name="Adventure.Model.Pull" />
+		<link-script ref="/js/Adventure.View" name="Adventure.View" />
+		<link-script ref="/js/Adventure.View.God" name="Adventure.View.God" />
+		<link-script ref="/js/Adventure.View.Human" name="Adventure.View.Human" />
+		<link-script ref="/js/Adventure.View.Map" name="Adventure.View.Map" />
+		<link-script ref="/js/Adventure.View.Map.Item" name="Adventure.View.Map.Item" />
+		<link-script ref="/js/Adventure.View.Menu" name="Adventure.View.Menu" />
+		<link-script ref="/js/Adventure.View.Solo" name="Adventure.View.Solo" />
+	</fragment>
+
+	<fragment name="api">
+		<custom-asset name="pull" executable-builder="Slothsoft\WhatTheHell\Assets\PullBuilder" />
+		<custom-asset name="push" executable-builder="Slothsoft\WhatTheHell\Assets\PushBuilder" />
+	</fragment>
+</assets>

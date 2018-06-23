@@ -2,10 +2,16 @@
 declare(strict_types = 1);
 namespace Slothsoft\WhatTheHell\Assets;
 
-use Slothsoft\Farah\Module\Node\Asset\AssetBase;
+use Slothsoft\Farah\FarahUrl\FarahUrlArguments;
+use Slothsoft\Farah\Module\Asset\AssetInterface;
+use Slothsoft\Farah\Module\Asset\ExecutableBuilderStrategy\ExecutableBuilderStrategyInterface;
+use Slothsoft\Farah\Module\Executable\ExecutableStrategies;
 
-class Pull extends AssetBase
+class PullBuilder implements ExecutableBuilderStrategyInterface
 {
+    public function buildExecutableStrategies(AssetInterface $context, FarahUrlArguments $args): ExecutableStrategies
+    {}
+
     /*
      * const MAX_EXECUTION_TIME = 6000;
      *

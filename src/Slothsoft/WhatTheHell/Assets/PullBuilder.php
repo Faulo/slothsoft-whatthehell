@@ -9,9 +9,10 @@ use Slothsoft\Farah\Module\Executable\ExecutableStrategies;
 
 class PullBuilder implements ExecutableBuilderStrategyInterface
 {
+
     public function buildExecutableStrategies(AssetInterface $context, FarahUrlArguments $args): ExecutableStrategies
     {}
-
+    
     /*
      * const MAX_EXECUTION_TIME = 6000;
      *
