@@ -44,7 +44,7 @@
     </fragment>
     
     <fragment name="api">
-    	<custom-asset name="pull" class="Slothsoft\WhatTheHell\Assets\Pull"/>
-    	<custom-asset name="push" class="Slothsoft\WhatTheHell\Assets\Push"/>
+    	<custom-asset name="pull" executable-builder="Slothsoft\WhatTheHell\Assets\PullBuilder"/>
+    	<custom-asset name="push" executable-builder="Slothsoft\WhatTheHell\Assets\PushBuilder"/>
     </fragment>
   </assets>
