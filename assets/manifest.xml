@@ -9,12 +9,13 @@
 	<directory name="static">
 		<resource name="adventure" path="adventure.xml" type="application/xml" />
 		<resource name="background-fort" path="background-fort.png" type="image/png" />
+		<resource name="screenshot" path="screenshot.png" type="image/png" />
 		<resource name="font" path="prstartk.ttf" type="application/x-ttf" />
 	</directory>
 
 	<fragment name="html">
-		<fragment name="faq">
-			<use-template ref="/xsl/faq" name="faq" />
+		<fragment name="home">
+			<use-template ref="/xsl/home"/>
 		</fragment>
 	</fragment>
 
