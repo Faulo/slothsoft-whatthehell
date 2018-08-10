@@ -9,6 +9,7 @@ use Slothsoft\Farah\Module\Executable\ExecutableStrategies;
 
 class PushBuilder implements ExecutableBuilderStrategyInterface
 {
+
     public function buildExecutableStrategies(AssetInterface $context, FarahUrlArguments $args): ExecutableStrategies
     {}
     /*
