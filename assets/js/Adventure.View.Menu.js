@@ -3,7 +3,7 @@ Adventure.View.Menu = Trait.build({
 		"ViewElement"
 	],
 	construct : function(ownerView, viewId) {
-		let templateDoc = DOM.loadDocument("/getAsset.php/whatthehell/xsl/view.menu");
+		let templateDoc = DOM.loadDocument("/slothsoft@whatthehell/xsl/view.menu");
 		this.ViewElement(ownerView, viewId, templateDoc);
 	},
 	vars : {

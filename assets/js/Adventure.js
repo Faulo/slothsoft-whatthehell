@@ -23,7 +23,7 @@ var Adventure = Trait.build({
 	construct : function() {
 		this.controller = new Adventure.Controller();
 		this.view = new Adventure.View();
-		this.model = new Worker("/getAsset.php/whatthehell/js/worker.model");
+		this.model = new Worker("/slothsoft@whatthehell/js/worker.model");
 		
 		this.model.model 			= this.model;
 		this.model.view 			= this.view;
