@@ -6,7 +6,7 @@ Adventure.View.Human = Trait.build({
 		this.ViewGameElement(
 			ownerView,
 			viewId,
-			"/getAsset.php/whatthehell/xsl/view.human",
+			"/slothsoft@whatthehell/xsl/view.human",
 			"api.pull.php?handle=god"
 		);
 		this.ownerView.controller.loadView("map", this);

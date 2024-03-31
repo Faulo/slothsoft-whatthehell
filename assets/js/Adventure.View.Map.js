@@ -3,7 +3,7 @@ Adventure.View.Map = Trait.build({
 		"ViewElement"
 	],
 	construct : function(ownerView, viewId) {
-		let templateDoc = DOM.loadDocument("/getAsset.php/whatthehell/xsl/view.map");
+		let templateDoc = DOM.loadDocument("/slothsoft@whatthehell/xsl/view.map");
 		this.ViewElement(ownerView, viewId, templateDoc);
 		this.intersection = new Intersection();
 		this.intersection.init();
