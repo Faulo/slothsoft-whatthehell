@@ -1,7 +1,7 @@
 {
 	"name" : "slothsoft/whatthehell",
 	"description" : "A Farah module that contains the game What the Hell, God?",
-	"license" : "WTFPL",
+	"license" : "MIT",
 	"authors" : [{
 			"name" : "Daniel Schulz",
 			"email" : "info.slothsoft@gmail.com"
